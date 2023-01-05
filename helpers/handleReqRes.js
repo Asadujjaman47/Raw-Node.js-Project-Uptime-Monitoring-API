@@ -24,7 +24,7 @@ handler.handleReqRes = (req, res) => {
     const trimmedPath = path.replace(/^\/+|\/+$/g, '');
     const method = req.method.toLowerCase();
     const queryStringObject = parsedUrl.query;
-    const headerObject = req.headers;
+    const headersObject = req.headers;
 
     const requestProperties = {
         parsedUrl,
@@ -32,7 +32,7 @@ handler.handleReqRes = (req, res) => {
         trimmedPath,
         method,
         queryStringObject,
-        headerObject,
+        headersObject,
     };
 
     const decoder = new StringDecoder('utf-8');

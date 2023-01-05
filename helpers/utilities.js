@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 /*
  * Title: Utilities
  * Description: Important utility functions
@@ -31,6 +32,25 @@ utilities.hash = (str) => {
         const hash = crypto.createHmac('sha256', environments.secrectKey).update(str).digest('hex');
 
         return hash;
+    }
+    return false;
+};
+
+// create random string
+utilities.createRandomString = (strlength) => {
+    let length = strlength;
+    length = typeof strlength === 'number' && strlength > 0 ? strlength : false;
+
+    if (length) {
+        const possibleCharecters = 'abcdefghijklmnopqrstuvwxyz1234567890';
+        let output = '';
+        for (let i = 1; i <= length; i += 1) {
+            const randomCharecter = possibleCharecters.charAt(
+                Math.floor(Math.random() * possibleCharecters.length)
+            );
+            output += randomCharecter;
+        }
+        return output;
     }
     return false;
 };
