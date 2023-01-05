@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center"><a href="">Raw Node.js Project - Uptime Monitoring API</a></h3>
+  <h3 align="center"><a href="https://github.com/Asadujjaman47/Raw-Node.js-Project-Uptime-Monitoring-API">Raw Node.js Project - Uptime Monitoring API</a></h3>
 
 <!-- HOW TO RUN -->
 
@@ -13,7 +13,7 @@ Please follow the below instructions to run this project in your machine:
 
 1. Clone this repository
    ```sh
-   git clone
+   git clone https://github.com/Asadujjaman47/Raw-Node.js-Project-Uptime-Monitoring-API.git
    ```
 2. Go into cloned directory
    ```sh
