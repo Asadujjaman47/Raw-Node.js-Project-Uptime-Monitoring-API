@@ -30,11 +30,12 @@ const app = {};
 //     console.log(err);
 // });
 // DELETE
-data.delete('test', 'newFile', (err) => {
-    console.log(err);
-});
+// data.delete('test', 'newFile', (err) => {
+//     console.log(err);
+// });
 
 // create server
+
 app.createServer = () => {
     const server = http.createServer(app.handleReqRes);
     server.listen(enviroment.port, () => {
