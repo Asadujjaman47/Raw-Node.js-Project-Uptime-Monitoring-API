@@ -17,6 +17,11 @@ enviroments.staging = {
     envName: 'staging',
     secrectKey: 'hiji_biji_hiji_biji_hiji_biji_',
     maxChecks: 5,
+    twilio: {
+        fromPhone: '',
+        accountSid: '',
+        authToken: '',
+    },
 };
 
 enviroments.production = {
@@ -24,6 +29,11 @@ enviroments.production = {
     envName: 'production',
     secrectKey: 'hiji_biji_hiji_biji_hiji_biji_2',
     maxChecks: 5,
+    twilio: {
+        fromPhone: '+880',
+        accountSid: '',
+        authToken: '',
+    },
 };
 
 // determine which enviroment was passed
