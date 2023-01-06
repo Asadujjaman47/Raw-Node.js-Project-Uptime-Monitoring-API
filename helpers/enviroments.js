@@ -16,12 +16,14 @@ enviroments.staging = {
     port: 3000,
     envName: 'staging',
     secrectKey: 'hiji_biji_hiji_biji_hiji_biji_',
+    maxChecks: 5,
 };
 
 enviroments.production = {
     port: 5000,
     envName: 'production',
     secrectKey: 'hiji_biji_hiji_biji_hiji_biji_2',
+    maxChecks: 5,
 };
 
 // determine which enviroment was passed
